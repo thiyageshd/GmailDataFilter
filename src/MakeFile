@@ -1,0 +1,10 @@
+deps:
+	pip install --upgrade pip
+	pip install -r requirements.txt
+	( \
+       . .env/bin/activate; \
+    )
+
+# create python3 virtual environment .env
+dev-env:
+	python3 -m venv .env
